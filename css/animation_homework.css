@@ -1,0 +1,51 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+
+
+.group{
+    height: 200px;
+    width: 1200px;
+    background-size: cover;
+    float: right;
+    margin-top: 70px;
+    position: relative;
+    animation-name: gr;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    transition: 2s;
+}
+
+.individual {
+    height: 200px;
+    width: 1200px;
+    background-size: cover;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+    animation-name: indiv;
+    animation-direction: reverse;
+    animation-duration: 3s;
+    transition: 2s;
+
+}
+
+@keyframes gr {
+    0%   { right:0px; bottom:0px;}
+    100% { right:500px; bottom: 70px;}
+}
+@keyframes indiv {
+    0%  { left: 0px; top: 0px; }
+    100% { left: 500px; top:100px; }
+}
+
+p {
+    font-size: 110px;
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 2s;
+}
