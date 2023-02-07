@@ -1,13 +1,14 @@
 body {
+    background-image: url("\header_pre_workout_booster.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
 }
 
 
 .group{
     height: 200px;
     width: 1200px;
+    background-image: url("\young-bodybuilder-doing-pushups-at-the-outdoor-gym-royalty-free-image-1661874908.jpg");
     background-size: cover;
     float: right;
     margin-top: 70px;
@@ -21,6 +22,7 @@ body {
 .individual {
     height: 200px;
     width: 1200px;
+    background-image: url("\young-bodybuilder-doing-pushups-at-the-outdoor-gym-royalty-free-image-1661874908.jpg");
     background-size: cover;
     float: left;
     margin-top: 100px;
