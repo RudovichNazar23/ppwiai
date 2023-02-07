@@ -6,8 +6,6 @@ body {
 
 
 .group{
-    height: 200px;
-    width: 1200px;
     background-image: url("\young-bodybuilder-doing-pushups-at-the-outdoor-gym-royalty-free-image-1661874908.jpg");
     background-size: cover;
     float: right;
@@ -17,11 +15,10 @@ body {
     animation-duration: 3s;
     animation-direction: reverse;
     transition: 2s;
+    z-index: -1;
 }
 
 .individual {
-    height: 200px;
-    width: 1200px;
     background-image: url("\young-bodybuilder-doing-pushups-at-the-outdoor-gym-royalty-free-image-1661874908.jpg");
     background-size: cover;
     float: left;
@@ -31,6 +28,7 @@ body {
     animation-direction: reverse;
     animation-duration: 3s;
     transition: 2s;
+    z-index: -1;
 
 }
 
@@ -50,4 +48,23 @@ p {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 2s;
+    z-index: 2;
 }
+
+
+.empty {
+    width: 100%;
+    height: 100%;
+    position: absolute; bottom: 0;
+    color: white;
+    opacity: 0;
+    animation-duration: 3s;
+    transition: 2s;
+    z-index: 1;
+    animation-direction: reverse;
+}
+
+.empty:hover {
+    opacity: 0.5;
+}
+
