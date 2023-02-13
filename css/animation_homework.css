@@ -1,11 +1,8 @@
 body {
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: red;
 }
 
-
-.group{
+.group {
     height: 200px;
     width: 1200px;
     background-size: cover;
@@ -46,6 +43,5 @@ p {
     color: white;
     vertical-align: text-bottom;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 2s;
 }
