@@ -4,8 +4,7 @@ body {
     background-size: cover;
 }
 
-
-.group{
+.group {
     height: 200px;
     width: 1200px;
     background-image: url("\young-bodybuilder-doing-pushups-at-the-outdoor-gym-royalty-free-image-1661874908.jpg");
@@ -17,6 +16,7 @@ body {
     animation-duration: 3s;
     animation-direction: reverse;
     transition: 2s;
+    z-index: 0;
 }
 
 .individual {
@@ -31,7 +31,7 @@ body {
     animation-direction: reverse;
     animation-duration: 3s;
     transition: 2s;
-
+    z-index: 0;
 }
 
 @keyframes gr {
@@ -43,11 +43,39 @@ body {
     100% { left: 500px; top:100px; }
 }
 
+.clear {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    transition: 2s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.group:hover p {
+    color: red;
+    z-index: 999;
+}
+
+.clear:hover {
+    opacity: 0.5;
+}
+
+.individual:hover p {
+    color: red;
+    z-index: 999;
+}
+
+
 p {
     font-size: 110px;
     color: white;
     vertical-align: text-bottom;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 2s;
+    position: relative;
 }
