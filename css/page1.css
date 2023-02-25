@@ -1,0 +1,68 @@
+body {
+    font-size: 25px;
+}
+
+.empty {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes anim {
+   0% {
+        background-color: green;
+        left: 0px;
+        top: 0px;
+   }
+
+   25% {
+        background-color: yellow;
+        left: 1520px;
+        top: 0px;
+   }
+
+   50% {
+        background-color: purple;
+        left: 1520px;
+        top: 850px;
+   }
+
+   75% {
+        background-color: grey;
+        left: 0px;
+        top: 850px;
+   }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
